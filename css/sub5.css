@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+html{
+    font-size: 16px;
+}
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+/* main */
+#main_header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color:rgb(255, 255, 255);
+    text-align: center;
+    z-index: 999;
+}
+.inner{
+    max-width: 1400px;
+    margin: 0 auto;
+    height: 100%;
+}
+#logo{
+    display: inline-block;
+    width: 100px;
+}
+#logo img{
+    width: 100%;
+}
+#logo a{
+    line-height: 100px;
+    display: block;
+}
+#nav_toggle{
+    width: 30px;
+    height: 30px;
+    float: right;
+    cursor: pointer;
+    margin-top: 35px;
+}
+#nav_toggle img{
+    width: 100%;
+}
+
+#main_nav{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.3);
+}
+#main_nav .depth{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 500px;
+    background-color:#f2f2f2;
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 180px;
+    z-index: 99;
+}
+header #main_nav .depth2{
+    display: none;
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 2;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+#main_nav li{
+    line-height: 4.5rem;
+}
+
+#main_nav ul li{
+    color: black;
+    font-family: 'GmarketSansMedium';
+    font-weight: lighter;
+}
+#main_nav a:hover{
+    border-bottom: 2px solid #57C3E0;
+}
+#main_nav .close{
+    position: absolute;
+    top: 50px;
+    right: 60px;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+}
+#main_nav .close img{
+    width: 100%;
+}
+/* program */
+#program{
+    padding-bottom: 150px;
+}
+#program h2{
+    font-family: 'GmarketSansMedium';
+    font-size: 2rem;
+    margin: 150px 0 20px 0;
+    line-height: 1.5;
+    font-weight: lighter;
+    border-left: 6px solid #57C3E0;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+#program .program_wrap{
+    display: flex;
+}
+.program_wrap .left{
+    width: 40%;
+}
+.program_wrap .right{
+    width: 60%;
+    margin-top: 150px;
+}
+.program_wrap .right img{
+    width: 100%;
+}
+.right h3{
+    padding: 50px 0;
+    font-family: 'GmarketSansMedium';
+    font-weight: lighter;
+}
+.right strong{
+    font-size: 1.2rem;
+    line-height: 2;
+}
+.right p{
+    padding-bottom: 30px;
+}
+.right ul li{
+    list-style-type: square;
+    margin-left: 20px;
+    line-height: 2;
+}
+.right ul li a{
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #57C3E0;
+}
+.right ul li a:hover{
+    background-color: black;
+    color: #57C3E0;
+}
+.btn{
+    margin-top: 100px;
+    text-align: center;
+}
+.btn a{
+    padding: 15px 0;
+    width: 180px;
+    display: inline-block;
+    font-family: 'GmarketSansMedium';
+    background-color: #57C3E0;
+    color: white;
+    margin: 0 10px;
+}
+.btn a:hover{
+    background-color: black;
+    color: #57C3E0;
+}
+/* news */
+#news{
+    margin-bottom: 110px;
+}
+#news .inner{
+    display: flex;
+}
+#news .inner .cont{
+    width: 85%;
+   
+    text-align: justify;
+}
+
+#news .inner .cont p{
+    margin-bottom: 10px;
+}
+#news .inner .email{
+    display: flex;
+    margin-top: 25px;
+  
+}
+
+#news .inner .email_txt{
+    border: none;
+    border-bottom: 1px solid;
+    font-size: 1rem;
+    padding-bottom: 15px;
+    padding-right: 50px;
+    margin-right: 5px;
+}
+button{
+    padding: 0 1.256rem;
+    height: 40px;
+    background-color:  #57C3E0;
+    color: white;
+    font-size: 1rem;
+    border: 1px solid white;
+}
+button:hover{
+    border: 1px solid #57C3E0;
+    background-color: #F4F4F4;
+    color: #57C3E0;
+}
+#news h4{
+    font-size: 1.7rem;
+    font-family: 'GmarketSansMedium';
+    font-weight: lighter;
+    height: 3rem;
+}
+/* footer */
+
+footer{
+    background-color: #F4F4F4;
+    box-shadow: 0 -5px 10px rgba(0,0,0,0.2);
+    text-align: center;
+    height: 380px;
+}
+
+footer .footer_top{
+    margin: 0 auto;
+    padding: 60px 0;
+}
+footer .footer_top ul li{
+    margin-right: 70px;
+    display: inline-block;
+}
+footer .footer_top ul li:last-child{
+    margin-right: 0;
+}
+.footer_top ul li img{
+    vertical-align: middle;
+    width: 45px;
+}
+footer .footer_top ul li span{
+    font-family: 'GmarketSansMedium';
+    font-weight: lighter;
+    display: inline;
+    font-size: 0.9rem;
+}
+address{
+    font-style: normal;
+}
+
+
+/* 미디어쿼리 */
+@media all and (max-width:1200px){
+    html{
+        font-size: 15px;
+    }
+}
+
+@media all and (max-width:700px){
+    html{
+        font-size: 12px;
+    }
+    .inner{
+        margin: 0 20px;
+    }
+    #main_header{
+        height: 70px;
+    }
+    #main_header #logo{
+        width: 70px;
+    }
+    #nav_toggle{
+        width: 22px;
+        height: 22px;
+        margin-top: 25px;
+    }
+    #main_nav .close{
+        width: 22px;
+        height: 22px;
+    }
+    #main_nav .depth{
+        width: 100%;
+    }
+    
+    #program{
+        padding-bottom: 100px;
+    }
+
+    #program .program_wrap{
+        display: block;
+        flex-wrap: wrap;
+    }
+    #program .program_wrap .left{
+        width: 100%;
+    }
+    #program .program_wrap .right{
+        width: 100%;
+        margin-top: 50px;
+    }
+    #program .btn{
+        margin-top: 50px;
+    }
+    #program .btn a{
+        margin-top: 20px;
+    }
+
+    #news{
+        margin: 0 auto;
+        padding: 60px 0;
+    }
+    #news .inner{
+        flex-wrap: wrap;
+        display: block;
+    }
+    #news .inner .cont{
+        width: 100%;
+        padding: 0;
+    }
+    #news .inner .cont h4{
+        font-size: 1.2rem;
+    }
+    #news .inner .email{
+        padding: 0;
+    }
+    #news .inner .text{
+        width: 100%;
+        margin: 5px;
+    }
+    #news .inner .email_txt{
+        width: 80%;
+    }
+    footer{
+        height: 300px;
+    }
+    footer .footer_top ul li{
+        display: inline-block;
+        margin-right: 30px;
+    }
+    footer .footer_top ul li img{
+        width: 30px;
+    }
+    footer .footer_top ul li span{
+        display: none;
+    }
+}    
